@@ -3219,3 +3219,6 @@ panic = "abort"
 rustdoc-args = ["-Zunstable-options", "--cfg", "docsrs"]
 all-features = true
 cargo-args = ["-Zunstable-options", "-Zrustdoc-scrape-examples"]
+
+[patch.crates-io]
+wgpu = { git = "https://github.com/workingjubilee/wgpu.git", branch = "fix-bad-ptr-in-compile_fxc-v0.19.3" }
